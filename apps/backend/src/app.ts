@@ -3,7 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import corsOptions from "../config/cors";
+//import corsOptions from "../config/cors";
 import setupSwagger from "../config/swagger";
 import termRoutes from "./api/v1/routes/termRoutes";
 import errorHandler from "./api/v1/middleware/errorHandler";
@@ -22,7 +22,8 @@ app.use(express.json());
 // add Cross-Origin Resource Sharing middleware
 // This will refuse requests from origins that do not fulfill corsOptions requirements
 // see https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
+app.use(cors()); // TEMP allow all origins during development
 
 // invoke swagger middleware for serving docs in /api-docs
 setupSwagger(app);
