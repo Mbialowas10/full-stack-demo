@@ -1,5 +1,7 @@
 {
    "relatedProjects": ["prj_0Br9ZmjspvjBZK3rV8ru5469aQAH"],
+   "outputDirectory": "build",
+   
 
    "git": {
      "deploymentEnabled": {
