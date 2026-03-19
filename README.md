@@ -40,3 +40,5 @@ DATABASE_URL=<local-postgres-db-url>
 ## Run the app
 1. `cd <solution-root-directory>`
 2. `npm run dev`
+
+test
